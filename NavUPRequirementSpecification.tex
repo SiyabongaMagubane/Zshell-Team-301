@@ -11,7 +11,8 @@
 	\maketitle
 	\section{Architecture Requirements}
 		\subsection{Quality Requirements}
-		 To create a safe working system that will meet all the required specifications of the NavUP project, specific system requirements need to be looked at in depth. The following are the system requirements that need to be considered. Security, reliability, efficiency and maintainability.
+		 To create a safe working system that will meet all the required specifications of the NavUP project, specific system requirements need to be looked at in depth. The following are the system requirements that need to be considered. Security, reliability, efficiency, maintainability and usability.
+		 
 		 \subsubsection{Security}
 		 Security is concerned with unauthorized access to specific software functions. An important security measure that needs to be satisfied by the NavUP system is the confidentiality of different user level usernames and passwords. Personal usernames will be set by each user, or their student/staff number will be used to log in. Each user will be required to set their own password. Passwords will be required to be more than 7 characters in length to decrease the likely hood of potential hackers hacking passwords successfully. In the case of a forgotten password, a users password may be reset via a link and an email with a One Time Password. If a user has entered the incorrect password more than 3 times, the account should be blocked and the user should be notified for a password reset. Passwords and any related personal information will be encrypted and safely stored in a 'Users' database.
 		 
@@ -21,11 +22,76 @@
 		Concerned with the level of risk and chance of application failure. To increase reliability, downtime needs to be reduced and prevented as well as application errors affecting users. Users will need to be navigated to specific locations for classes, practicals and crucial meetings. User authority needs to be kept in place, not allowing users access to prohibited functions allowing them to make unwanted changes to the NavUP system. The NavUP system will need the ability to recover from a failed state, bring back the system to full operation. Finally the NavUP application should withstand any environmental threats that have the potential to cause system failure.
 		 
 		\subsection{Efficiency}
+		The two primary sub characteristics of efficiency are broken down into, time behavior and resource behavior. The performance of the NavUP application will be a reflection of how efficient the resources have been used within the application. This will have an effect on the battery life of mobile devices as they are engineered to have a longer life with less processing being done.
+		By making use of a microservice architecture we will develop a suite of independent and deployable software services, structuring each non-functional requirement into logical, coherent modules, utilizing the correct design patterns and designs, resulting in maximum efficiency.
 		
 		\subsection{Maintainability}
+		As previously mention, each non-functional requirement will be structured logically, enabling future programmers to understand and make necessary changes without the headache of trying to figure out what each code service's purpose is. Due to each software service being independent it will allow code to be worked on without total service down time, this too will contribute to the overall stability, testability and analyzability in identifying the root cause of a failure within the application software.
+		
+		\subsection{Usability}
+		The usability is of utmost importance, as we will have a variety of users making use of the NavUP application. Users will range from individuals who are experts at using mobile devices to older generation users who might not be as experienced in using mobiles devices and applications. Features and functions will be easy to understand and use maximizing user experience and making it easy for new users to learn how the application functions.		
 	
 	\section{Architecture Constraints}
-		 
-		  
-		 
+	Constraints are a result of design decisions that are fixed and may not be altered. Constraints may be intentional or unintentional often provided by stakeholders committed toward the project.
+		
+		\subsection{Programming Language Constraints}
+			\begin{itemize}
+ 				\item Web Based Development
+ 				\bigskip
+ 				\\ 				
+ 				The web based development will make use of a variety of programming languages. HTML, CSS, JavaScript and JSON will be the minimum required languages needed to deliver what is expected.
+ 				
+ 				All the client validation will be done using JavaScript, checking user input validation.			
+ 				
+  				\item Server Side Development
+  				\bigskip
+ 				\\
+ 				User information, information regarding locations and venues will be stored within a database. To run the database we will make use of mySQL and PHP and AJAX, where validation will be done by PHP.
+ 				
+ 				\item Mobile Application  Development
+  				\bigskip
+ 				\\
+ 				The mobile application will be built using Android Studio (Java).
+ 							
+			\end{itemize}
+			
+		\subsection{Operating System Constraints}			   
+ 				The NavUP application needs to run on Windows, iOS and Android at the very least. Building software that fails to satisfy the platform constraint means we have failed to deliver what is expected by the external stakeholder. 
+ 				
+ 		\subsection{Network Constraints}			 
+ 				The NavUP application will run on the Universities network allowing only users within the firewall to make use of the application.
+ 				
+ 	\pagebreak
+ 	
+ 	\section{Architectural Patterns or Styles}
+ 	We will be implementing the microservices architectural design pattern.
+ 	
+ 		\subsection{Benefits}
+ 			\begin{itemize}
+ 				\item Deployability
+ 				\bigskip
+ 				\\
+ 				Redeployment is not necessary when changes are made to code preventing the risk of disruption.
+ 				Developers are able to deploy independent services without having to wait on others to complete their modules, this improves time management and contributes to the overall flexibility.
+ 				\item Changeability
+ 				\bigskip
+ 				\\
+ 				Due to constant changes in technologies and user requirements upgrades need to be made to adapt to these new changes. Microservices  facilitate this very well allowing independent services to be upgraded.
+ 				\item Ability to Utilize Different Technologies
+ 				\bigskip
+ 				\\
+ 				Java may be used for event processing microservices due to multithreading properties of JVM.
+ 				This allows programmers to make use of new technologies on services without disrupting of causing system failure.
+ 				\item System Resilience
+ 				\bigskip
+ 				\\
+ 				If a microservice stops working, only small, very specific functionality will be lost. This enables programmers to build resilience by making use of smaller independent services.
+ 			\end{itemize}
+ 		\subsection{Concerns}
+ 			\begin{itemize}
+ 				\item Complexity
+ 				\bigskip
+ 				\\
+ 			\end{itemize}
+ 			  
 \end{document}
