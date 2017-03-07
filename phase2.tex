@@ -94,10 +94,10 @@
  				\bigskip
  				\\
  			\end{itemize}
- 			 \subsection{Architectural Patterns for subsystems}
+ 			 \section{Architectural Patterns for subsystems}
 				\subsection{User Subsystem}
 				For the User module we will be using a layered architecture, allowing the use of dependency injection allowing for pluggable application architectures
-					\subsection{Benefits}
+					\subsubsection{Benefits}
  						\begin{itemize}
  							\item Seperation of Concerns
  							\bigskip
@@ -116,11 +116,11 @@
  							\\
  							 One of the most commonly used architectures means that protocols and designs means the system will be stable.
  						\end{itemize} 
-	\subsection{Concerns}
+	\subsubsection{Concerns}
  			
  				There are many problems that can occur but the main one would be how to design the application so that it supports maintainability, extensibility, security and scalability.
 			
-	\subsection{Design of the Architecture}
+	\subsubsection{Design of the Architecture}
 		\begin{itemize}
  				\item Class Diagram
 				
@@ -150,7 +150,7 @@
 				\includegraphics[scale=0.45]{smdu.png}
 			
  		\end{itemize}
-	\subsection{Technologies}
+	\subsubsection{Technologies}
 			\begin{itemize}
  				\item Presentation Layer
 				\\
@@ -178,5 +178,31 @@
 				
 			
  		\end{itemize}
-	
+ 		
+ 		\subsection{Navigation Subsystem}
+				For the implementation of the Navigation module the well known design pattern 'Facade' has been used. The reasoning behind the use of this design pattern is creating a simpler interface to a underlying complex system. This will contribute to easier maintainability by making the use and testing of the code easier for the software developer. It will also reduce dependencies of outside code on the inner working classes within the Facade design pattern, adding to the flexibility of the overall system.
+				
+			\begin{itemize}
+ 				\item Class Diagram
+ 				\\
+ 				\\
+ 				\\ 			
+				\includegraphics[scale=0.75]{navigationClassDiagram.png}
+			\pagebreak
+			
+				\item Sequence Diagram
+ 				\\
+ 				\\
+ 				\\ 			
+				\includegraphics[scale=0.45]{navigationSequenceDiagram.png}
+			\pagebreak
+			
+				\item Activity Diagram
+ 				\\
+ 				\\
+ 				\\ 			
+				\includegraphics[scale=0.45]{navigationActivityDiagram.png}
+				
+				
+			\end{itemize}
 \end{document}
