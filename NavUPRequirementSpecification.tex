@@ -92,6 +92,21 @@
  				\item Complexity
  				\bigskip
  				\\
+ 				Complexity is of main concern to the microservices architecture. Due to all the independent services, programmers need to carefully handle requests between modules. Calls experiencing latency can also make thing more complex to handle. Coordination within the architecture may not be straightforward increasing the chance of failure between services.
  			\end{itemize}
+ 			\begin{itemize}
+ 				\item Unsafe Distributed Communication
+ 				\bigskip
+ 				\\
+ 				Each service runs independently, communicating over the network, increasing the likelihood that something will go wrong. Transaction safety is also of concern.
+ 			\end{itemize}
+ 			
+ 	\section{Integration Requirements}
+ 	Concerned with securely coordinated sharing of processes and data between modules and applications.
+ 	
+ 	\pagebreak
+ 	
+ 	\section{Modules Selected}
+ 		\subsection{}
  			  
 \end{document}
