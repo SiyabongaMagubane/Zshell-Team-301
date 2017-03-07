@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {c:/images/} }
+\title{NavUP: Architectural Requirements Specifications and Design}
+\author{	 
+	Greeff, Claude\\
+	\texttt{u13153740@tuks.co.za}
+	\and	
+}
+\begin{document}
+	\maketitle
+	\section{Architecture Requirements}
+		\subsection{Performance Requirements}
+These Requirements outline what navUP should be able to maintain during the course of its lifetime in terms of the performance of the application
+		 
+		 \subsubsection{Response Time}
+		 The system warrants that even if over 40 000 students are connected. The performance of the application will not fall under 10 seconds of waiting a response from the application. This includes on each platform(IOS,Android, Windows). This also includes the infrastructure of the application, as well as front - ends. The response time will be measured using filters within Java EE. 
+
+		\subsection{Workload}
+		The application must support all the students on UP campus( around 40 000), as well as guests and administrators of the application in which 15 000 will use the application on a day to day basis.
+		In terms of login. around 90 percent of active users will log in and log out of the application each day. In terms of public services around 70 percent will use them each day. In terms of administrators. Changes will be made around 60 percent each day.
+		\subsection{Scalability}
+The application will be capable of supporting at least users each day. As long as the application is implemented in such a way as to support large amounts of users.
+		
+		\subsection{Platform Considerations}
+		The application will make use of windows, Android and IOS. The hardware and software must be able to support each platform and work independently from one another.
+		
+
+
+ 		
+	
+\end{document}
