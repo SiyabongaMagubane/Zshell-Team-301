@@ -1,18 +1,40 @@
 \documentclass{article}
+\usepackage{hyperref}
 \usepackage[margin=2cm]{geometry}
 \usepackage{graphicx}
-\graphicspath{ {c:/images/} }
-\title{NavUP: Architectural Requirements Specifications and Design}
-\author{	 
-	Greeff, Claude\\
-	\texttt{u13153740@tuks.co.za}
-	\and	
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
 }
 \begin{document}
-	\maketitle
+		\title{NavUp Architecture Requirements Specification}
+\maketitle
+		\begin{center}
+			\textbf{\newline Zshell Team} \\
+		\end{center}
+			
+				
+		\begin{flushright} \large
+			Siyabonga Magubane  - u15289347 \newline
+			Greeff, Claude u13153740
+		\end{flushright}
+
+		
+		
+		
+		GitHub Repository: \href{https://github.com/SiyabongaMagubane/Zshell-Team-301}\\
+		\url{https://github.com/SiyabongaMagubane/Zshell-Team-301}
+		
+\clearpage
+\tableofcontents
+
+\clearpage
 	\section{Architecture Requirements}
 		\subsection{Quality Requirements}
-		 To create a safe working system that will meet all the required specifications of the NavUP project, specific system requirements need to be looked at in depth. The following are the system requirements that need to be considered. Security, reliability, efficiency, maintainability and usability.
+To create a safe working system that will meet all the required specifications of the NavUP project, specific system requirements need to be looked at in depth. The following are the system requirements that need to be considered. Security, reliability, efficiency, maintainability and usability.
 		 
 		 \subsubsection{Security}
 		 Security is concerned with unauthorized access to specific software functions. An important security measure that needs to be satisfied by the NavUP system is the confidentiality of different user level usernames and passwords. Personal usernames will be set by each user, or their student/staff number will be used to log in. Each user will be required to set their own password. Passwords will be required to be more than 7 characters in length to decrease the likely hood of potential hackers hacking passwords successfully. In the case of a forgotten password, a users password may be reset via a link and an email with a One Time Password. If a user has entered the incorrect password more than 3 times, the account should be blocked and the user should be notified for a password reset. Passwords and any related personal information will be encrypted and safely stored in a 'Users' database.
@@ -31,7 +53,7 @@
 		
 		\subsection{Usability}
 		The usability is of utmost importance, as we will have a variety of users making use of the NavUP application. Users will range from individuals who are experts at using mobile devices to older generation users who might not be as experienced in using mobiles devices and applications. Features and functions will be easy to understand and use maximizing user experience and making it easy for new users to learn how the application functions.		
-	
+\clearpage	
 	\section{Architecture Constraints}
 	Constraints are a result of design decisions that are fixed and may not be altered. Constraints may be intentional or unintentional often provided by stakeholders committed toward the project.
 		
@@ -96,60 +118,7 @@
  			\end{itemize}
  			 \subsection{Architectural Patterns for subsystems}
 				\subsection{User Subsystem}
-				For the User module we will be using a layered architecture, allowing the use of dependency injection allowing for pluggable application architectures
-					\subsection{Benefits}
- 						\begin{itemize}
- 							\item Seperation of Concerns
- 							\bigskip
- 							\\
- 							Seperates the business logic from the presentation, thus allowing you to work on seperate layers independently, allowing non-repeatability
- 							\item Flexibility
- 							\bigskip
- 							\\
- 							Coping with growth or traffic will be easier to handle.
- 							\item Each layer can evolve independently
- 							\bigskip
- 							\\
- 							Since each layer is independent from each other, each layer will be able to change without affecting any of the other layers.
- 							\item proven and stable protocols and design
- 							\bigskip
- 							\\
- 							 One of the most commonly used architectures means that protocols and designs means the system will be stable.
- 						\end{itemize} 
-	\subsection{Concerns}
- 			
- 				There are many problems that can occur but the main one would be how to design the application so that it supports maintainability, extensibility, security and scalability.
-			
-	\subsection{Design of the Architecture}
-		\begin{itemize}
- 				\item Class Diagram
 				
- 			
-				\includegraphics[scale=0.75]{cdu.png}
- 				\\
-				\\
-				\\
-				\\
-				\item Sequence Diagram
-				
- 				
-				\includegraphics[scale=0.4]{isdu.png}
-				\\
-				\\
-				\\
-				\\
-				\item Use Case Diagram
-
-	
-				\includegraphics[scale=0.75]{uuc.png}
-				\\
-				\\
-				\\
-				\\
-				\item State Diagram
-				\includegraphics[scale=0.45]{smdu.png}
-			
- 		\end{itemize}
 	\subsection{Technologies}
 			\begin{itemize}
  				\item Presentation Layer
