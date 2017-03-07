@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {c:/images/} }
+\title{NavUP: Architectural Requirements Specifications and Design}
+\author{	 
+	Greeff, Claude\\
+	\texttt{u13153740@tuks.co.za}
+	\and	
+}
+\begin{document}
+	\maketitle
+	\section{Sofware System Attributes}
+ 
+		 \subsubsection{Security}
+		Users or guests are not allowed to alter fields in the database. This will be done through prepared statements in JDBC.
+		\subsection{Flexibility}
+		The architecture is designed in such a way that any layer  may be altered without changing any other layer. Thus to adapt those layers becomes increasingly easy
+
+		\subsection{Maintainability}
+		By the use of a layered architecture the system will remain easy to maintain since we will be using common tested methods to make it easy to fix bugs, and improve the system over time due to the loosely coupled nature of a layered architecture
+		\subsection{Availability}
+		If one layer fails, since a layered architecture is loosely coupled. The application will be available most of the time. Since a failure on one layer will not completely break the database or application in any way.
+		\subsection{Efficiency}
+		The database will be accessed accordingly and through the use of JDBC and RESTful webservices, the required processing will be done in the least amount of time with the least amount of hardware.
+		\subsection{Resilience}
+		The application will handle heavy loads due to the fast processing nature of a layered- architecture.
+		\subsection{Modularity}
+		The user module is broken up into layers, each layer is a seperate component which can be worked on independently
+
+ 		
+	
+\end{document}

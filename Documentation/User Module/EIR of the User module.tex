@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {c:/images/} }
+\title{NavUP: Architectural Requirements Specifications and Design}
+\author{	 
+	Greeff, Claude\\
+	\texttt{u13153740@tuks.co.za}
+	\and	
+}
+\begin{document}
+	\maketitle
+	\section{Architecture Requirements}
+		\subsection{External Interface Requirements}
+These requirements outline the external interfaces needed in terms of hardware, software and GUI For the users module
+		 
+		 \subsubsection{User Interfaces}
+The system will make use of of Tabris, which is a cross platform user interface that will support windows, IOS and android. The reasoning is that the application has to work on multiple platforms, this enables us to use one specific technology for the user interface.
+		\subsection{Hardware Interfaces}
+		The hardware interfaces will be only hardware where the application can run on. The four hardware interfaces that will be used will be a Personal Computer. A laptop. A phone. A tablet 
+		\subsection{Software Interfaces}
+		The users module will have different interfaces for each section of a layered architecture. The presentation layer will make use of Tabris. The business layer will use java EE's REST API.  The persistence layer will use JPA and the database layer will make use of JDBC. All of these interfaces make use of Java EE as to make it easier for dependency injection.
+		\subsection{Platform Considerations}
+		The application will make use of windows, Android and IOS. The hardware and software must be able to support each platform and work independently from one another.
+		
+
+
+ 		
+	
+\end{document}
