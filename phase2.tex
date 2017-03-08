@@ -205,4 +205,20 @@
 				
 				
 			\end{itemize}
+
+		\subsection{Events Subsystem}
+		In the case of the Events subsystem, we thought it would be relevent to use the "Observer" design pattern. This would allow for an efficient use of real time systems and help the process of updateing information about events immensly. This should streamline the process behind updating the Events fedd as well as providing the infomation to a multitude of users. 
+				
+			\subsection{External Interface Requirements}
+			The external requirements for the Events module will boil down to the actual organisation of events and how the entire subsystem will be structured around real time updating of the application to provide information about a particular event as soon as possible. We would have to implement some for of push notification API in order to effectively update the events module and provide this kind of information.
+
+			\subsection{Performance Requirements}
+			Seeing as how most of this specific module will be about transfering information in real time, it would require that the systems in which it will be used will need to have some form of push API. Fortunately, most smartphones in this day and age will cater to that. Data and internet connection will be requirements for this modulae to work, you would not have to be connected to campus wi-fi as it would just be updating a feed of events happening in and around campus.
+
+			\subsection{Design Constraints}
+			This comes down to how the system will be updated. It should be noted that in order to keep the information about events precise, one admin user should take up the role of updating the feed. This means that we will end up having only one information source about these events. Further more, the design of the feed will have to be done in such a way as to nnot clutter the main interface and to take up as little space as possible in order to allow for more inmportant feature, such as navigation, to be more prominent.
+			\begin{itemize}
+				
+				
+			\end{itemize}
 \end{document}
