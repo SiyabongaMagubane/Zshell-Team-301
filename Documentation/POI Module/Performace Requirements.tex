@@ -1,0 +1,16 @@
+\documentclass[11pt]{article}
+\begin{document}
+\section{Performance Requirements}
+\subsection{Recovery time:}
+	System takes round about a minute to recover from a system failure.System should 				restart in the event of system failure saving all POI information changes to the 				database and clearing all volatile events that were  not submitted to the database.
+\subsection{Response time:}
+	System responds to queries in the least time possible almost instantaneously in 				real-time  to make the system bearable to use.
+\subsection{Shutdown time:}
+	System takes less than 5 seconds to shutdown, successfully aborting all running 				tasks on the system;shutting down all database connection and then closing the system 			without damaging any information on the database and web-server connections.Loading 			progress bar should be displayed if it exceeds the time.
+\subsection{Start-up time:}
+	System takes less then 10 seconds to establish connection to database and web-server
+	Loading progress bar should be displayed if it exceeds the time.
+\subsection{Throughput:}
+	System at optimum performance uses about 30 percent of the systems RAM.Depending on the 		processing power of the system multi-processing increases speed in multi-threading , 			multi-processing unit.
+	
+\end{document}
