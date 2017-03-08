@@ -215,7 +215,7 @@ Data and information between users and servers will communicate through the netw
 				For the business layer we will use Java Enterprise Editions' REST API, this is for improved scalability since the client and server are loosely coupled.
  				
 			
-				\item Persistence Layer
+ 				\item Persistence Layer
 				\\
 				\\
 				For the Persistence layer we will use Java Persistence API(JPA), for accessing, managing and persisting data between data transfer objects. This allows us to focus more on the object model than the actual SQL, enables us to save time by generating/updating SQL queries and convert the results to our model classes.
@@ -230,7 +230,7 @@ Data and information between users and servers will communicate through the netw
  		\end{itemize}
  		
  		\subsection{Navigation Subsystem}
-				For the implementation of the Navigation module the well known design pattern 'Facade' has been used within a layered architecture. The reasoning behind the use of this design pattern is creating a simpler interface to a underlying complex system. This will contribute to easier maintainability by making the use and testing of the code easier for the software developer. It will also reduce dependencies of outside code on the inner working classes within the Facade design pattern, adding to the flexibility of the overall system.
+				For the implementation of the Navigation module the well known design pattern 'Facade' has been used within a layered architecture. The reasoning behind the use of this design pattern is creating a simpler interface to a underlying complex system. This will contribute to easier maintainability by making the use and testing of the code easier for the software developer. It will also reduce dependencies of outside code on the inner working classes within the Facade design pattern, adding to the flexibility of the overall system. The route management will be within the Persistence layer of the multitier architecture.
 				
 			\begin{itemize}
  				\item Class Diagram
