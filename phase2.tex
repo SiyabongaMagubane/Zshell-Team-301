@@ -43,7 +43,7 @@
  				The web based development will make use of a variety of programming languages. HTML, CSS, JavaScript and JSON will be the minimum required languages needed to deliver what is expected.
  				
  				All the client validation will be done using JavaScript, checking user input validation.			
- 				
+s 				
   				\item Server Side Development
   				\bigskip
  				\\
@@ -66,7 +66,7 @@
  	
 	\section{External Interface Requirements}
 	
-	\subsection{User Interface}
+	\subsection{User Interfaces}
 
 The NavUP application will consist of different user interfaces, depending on the user's level of authority. Each level of UI will be appropriate with 
 regards to the ease of use. The 'Guest' users with the lowest level of authority with have a basic, easy to use view. Guest users will be new to using
@@ -81,14 +81,19 @@ to lower level user's information.
 
 Visually the UI of all users will cater for people with disabilities with a easy to read and understand layout.
 	
-	\subsection{Hardware Interface}
+	\subsection{Hardware Interfaces}
 	
 	The NavUP application will be a web and mobile compatible application. Focusing on the mobile side of things, the application will be able to run on any
 device which runs on Android or iOS. The software will be written in the most efficient way as possible to put as little stress on the CPU as possible
 allowing for longer battery life. The application does not write directly to the users device but instead to the NavUP database which is located on a 
 network server. Users will have to be within the network firewall of the University of Pretoria to make use of the NavUP application. The user's device
 transfers and receives data from the server using a set of secure network protocols ensuring information is not compromised.
-	
+
+	\subsection{Software Interfaces}	
+
+As mentioned the application will run on Android and iOS. On the server side, the servers can either make use of Windows,Linux or UNIX, but it is required
+to have MySQL installed and configured.
+ 
 	\pagebreak
  	\section{Architectural Patterns or Styles}
  	We will be implementing the microservices architectural pattern. As well as different architectural patterns for each subsystem
