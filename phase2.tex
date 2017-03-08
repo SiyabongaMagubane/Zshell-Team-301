@@ -293,10 +293,22 @@ The conceptualization process of the POI will help provide a common conceptual b
 
 			\subsection{Performance Requirements}
 					Seeing as how most of this specific module will be about transfering information in real time, it would require that the systems in which it will be used will need to have some form of push API. Fortunately, most smartphones in this day and age will cater to that. Data and internet connection will be requirements for this modulae to work, you would not have to be connected to campus wi-fi as it would just be updating a feed of events happening in and around campus.
-
+		
 			\subsection{Design Constraints}
 					This comes down to how the system will be updated. It should be noted that in order to keep the information about events precise, one admin user should take up the role of updating the feed. This means that we will end up having only one information source about these events. Further more, the design of the feed will have to be done in such a way as to nnot clutter the main interface and to take up as little space as possible in order to allow for more inmportant feature, such as navigation, to be more prominent.
-			\begin{itemize}
-				\item				
-			\end{itemize}
+
+			\subsection{Technologies}
+				\begin{itemize}
+				\item	RSS
+				An rss feed type system wold be worth looking into as a means to distribute the information given to multiple users, it would allow a seamless transition to the presentation layer
+				\item Presentation Layer
+				Like with the User module, android studio would be used as well as other tech nologies for iOS. These along with RSS can be used to effectively craft a visually pleasing experience.
+
+				\item Business Layer
+				We will make use of the REST API for this module since its what we will be using for our other modules, this will allow us to easily communicate between modules as well as add additional functionality. We would also make use of ATOM for our RSS API. This would allow us to handle our information distribution across multiple users more efficiently.
+				
+				\item Persistence Layer
+				This is where the notifictions will crafted and sent through to the users of this app. The technology used here will be any form of object orientated language, The most likely candidate for this will be JAVA as it would make the handling of data between the different layers simple.	
+				\end{itemize}
+			
 \end{document}
