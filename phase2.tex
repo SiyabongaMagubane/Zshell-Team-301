@@ -255,7 +255,36 @@ Data and information between users and servers will communicate through the netw
 				
 				
 			\end{itemize}
-
+		\subsection{Point Of Interest Subsystem}
+			
+ 		\subsubsection{Type of System and Architecture design}
+The POI(Point of Interest) subsystem will be implemented using the N-tier architecture which is structured into the graphic user interface, controller, business objects, database and network communication layers.The POI subsystem is an interactive subsystem that uses predeﬁned protocols namely the GIS module which supplies the information location allowing the POI subsystem to implement the CRUD locations functional requirement: Drop a pin and name it. Show saved pins. Edit detail about pins. Delete pins.The GUI layer is responsible for getting the user’s input into the system for example the admin user. The information is transferred through a controller layer object to the database layer where the network communication layer may be invoked in the event where the database is located in a remote site.
+		\subsubsection{Domain Model }
+The conceptualization process of the POI will help provide a common conceptual basis for subsequent design, implementation, testing and maintenance.The visualization of the domain model of POI is represented by the following UML diagrams below.
+				
+			\begin{itemize}
+ 				\item Class Diagram
+ 				\\
+ 				\\
+ 				\\ 			
+				\includegraphics[scale=0.75]{POI_ClassDiagram.png}
+			\pagebreak
+			
+				\item Use Case Diagram
+ 				\\
+ 				\\
+ 				\\ 			
+				\includegraphics[scale=0.45]{POI.png}
+			\pagebreak
+			
+				\item Activity Diagram
+ 				\\
+ 				\\
+ 				\\ 			
+				\includegraphics[scale=0.45]{navigationActivityDiagram.png}
+				
+				
+			\end{itemize}
 		\subsection{Events Subsystem}
 				In the case of the Events subsystem, we thought it would be relevent to use the "Observer" design pattern. This would allow for an efficient use of real time systems and help the process of updateing information about events immensly. This should streamline the process behind updating the Events fedd as well as providing the infomation to a multitude of users. 
 				
