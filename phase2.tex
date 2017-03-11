@@ -436,7 +436,22 @@ The POI(Point of Interest) subsystem will be implemented using the N-tier archit
 		\subsubsection{Domain Model }
 The conceptualization process of the POI will help provide a common conceptual basis for subsequent design, implementation, testing and maintenance.The visualization of the domain model of POI is represented by the following UML diagrams below.
 
+\subsubsection{External Interface Requirements}
+These requirements outline the external interfaces needed in terms of hardware, software and GUI For the users module.
 
+\begin{itemize}	 		
+	\item \textbf{GUI:}
+	\\The application should make use of a GUI that is incredibly user friendly, such that guests that come to the university will be able to navigate through the application with ease.
+	
+	\item \textbf{Screen Layout:}
+	\\The layout of the application is important and there should be a clear flow when using it. Screen resolution should also be considered because some of the phones that may use the application may not have a high enough resolution for the application to work.
+	
+	\item \textbf{Standard Features:}
+	\\The application will ensure that it's menu button is always visible no matter where the user might be in the application. This menu button will appear on every screen.
+	
+	\item \textbf{Fonts:}
+	\\The application will use a standardised font that is easily readable.
+\end{itemize}
 
 		\subsubsection{Design of Architecture}
 			\begin{itemize}
@@ -491,6 +506,25 @@ The conceptualization process of the POI will help provide a common conceptual b
  						\caption{Point of Interest Module State Diagram}
  					\end{figure}
  				\end{center}
+ 		\end{itemize}
+ 				
+ 		\subsubsection{Technologies}
+ 		\begin{itemize}
+ 			\item Database Layer
+ 			\\
+ 			\\
+	 		The database layer will make use of POSTGRES. JDBC provides the connection to the database, which provides a familiar java interface which enables easier use of SQL, which is 	advantagous as other layers will be generating SQL queries.
+	 		
+	 		\item Persistance Layer
+	 		\\
+	 		\\
+	 		The application will use Java Persistance API(JPA) in order to manage and access data.
+	 		Java will be used in order to save locations and to get the current locations for android devices.
+	 		Objective C will be used instead for iOS devices.
+	 		\item Presentation Layer
+	 		\\
+	 		\\
+	 		The application will use android studios for android devices and iOS and Web front for iOS devices. This allows for the application to work on any device.
 				
 				
 			\end{itemize}
