@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {c:/images/} }
+\title{NavUP: Architectural Requirements Specifications and Design}
+\author{	 
+	Greeff, Claude\\
+	\texttt{u13153740@tuks.co.za}
+	\and	
+}
+\begin{document}
+	\maketitle
+	\section{Architecture Requirements}
+		\subsection{Design Constraints}
+These Requirements outline what navUP should be able designed according to the client.
+		 
+		 \subsubsection{Modularity}
+		Each activiity of the system is done by exactly one module. 
+
+		\subsection{Minimal Dependency}
+		The use of dependency injection to make sure modules are as loosely coupled as possible, In a layered architecture. Making sure layers are also loosely coupled.
+		\subsection{Well Defined Input}
+		Every input/output is needed for the function of that specific module.
+		
+		\subsection{Abstraction}
+		Make sure changes later wont affect the application as a whole, by abstracting the implementation details.
+		
+
+
+ 		
+	
+\end{document}
